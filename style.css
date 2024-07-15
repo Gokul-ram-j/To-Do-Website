@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+*{
+    font-family: 'Salsa', cursive;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+h2{
+    margin: 2%;
+    background: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.intro{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin-top: 0%;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.bgi{
+    background-image: url("./assets/team\ checklist-rafiki.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 2px black);    
+}
+.context{
+    background-color: transparent;
+    margin: auto;
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    margin-top: 2%;
+}
+
+.context>h1{
+    margin-top: 10%;
+    font-size: 80px;
+}
+input{
+    margin-left: 35%;
+    margin-bottom: 20px;
+}
+
+.addlist{
+    margin-left:45%;
+    padding: 10px;
+    min-width: fit-content;
+    min-height:fit-content;
+    color: white;
+    background-color: black;
+    text-wrap: nowrap;
+    border-radius: 20px;
+}
+
+.addlist:hover{
+    color: black;
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+.addlist>span{
+    border-radius: 20px;
+    font-size: 25px;
+    margin: 0%;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.alltask{
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    column-gap: 10px;
+}
+
+.tasktype{
+    min-height: 300px;
+    min-width: 300px;
+    border: 2px solid black;
+    border-radius:20px ;
+    box-shadow: 5px 5px 5px  black;
+    position: relative;
+}
+
+
+
+.removetasktype{
+    background: black;
+    color: white;
+    position: absolute;
+    top: 11px;
+    left: 87%;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.removetasktype:hover{
+    background: white;
+    color: #000;
+}
+
+.task{
+    padding: 10px;
+    border: 2px solid black;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    min-height: fit-content;
+    position: relative;
+}
+.title{
+    display: flex;
+}
+h3{
+    margin: 0%;
+    margin-left: 15px;
+    padding-left: 0%;
+}
+
+.taskinfo{
+    width: 100%;
+    padding-right: 10px;
+}
+
+.subtask{
+    margin: 0%;
+    padding: 10px;
+}
+
+
+.completebtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    background-image: url("./assets/undone.png");
+    background-size: cover;
+    background-position: center ;
+}
+
+
+
+.addmaintask{
+    margin-bottom:20px ;
+}
+
+.subtaskremovebtn, .removemaintask{
+    position: absolute;
+    border: 2px solid white;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    top: 5%;
+    left: 90%;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.subtaskremovebtn:hover, .removemaintask:hover{
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+
+li{
+    position: relative;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 90%;
+    list-style: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+}
+
+.btn-17{
+    border: 2px solid black;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
+    width: 70%;
+}
+
+.addsubtask{
+    margin-left: 15%;
+}

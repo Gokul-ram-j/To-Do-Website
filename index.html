@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do Application</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="context">
+            <h1>TO DO APPLICATION</h1>
+            <p>Welcome to our intuitive and efficient To-Do web application, designed to streamline your task management experience. With our user-friendly interface, you can effortlessly add and organize your tasks, ensuring a seamless workflow. Tailor your to-do list to perfection by marking tasks as complete and utilizing individual columns to categorize them based on their type, providing a clear and organized view of your responsibilities. The flexibility of our application allows you to remove tasks with ease, empowering you to maintain an up-to-date and clutter-free task list. Stay organized, boost productivity, and conquer your daily goals with our feature-rich To-Do web application.</p>
+
+        </div>
+        <div class="bgi"></div>
+    </div>
+
+    <h1>YOUR TASK</h1>
+    <button onclick="addnewlist()" class="addlist"><span>+</span>ADD NEW LIST</button>
+    <div class="alltask">
+          
+           
+        <div class="tasktype">
+            <h2 contenteditable="">TASK TITLE</h2>
+            <div class="task">
+                <input type="date" name="" id="">
+                <div class="title">
+                    <button onclick="markcomplete(this)"  class="completebtn"></button>
+                    <div class="taskinfo">
+                        <h3 contenteditable="">Task Name</h3>
+                        <ul class="subtask">
+                            <li><p contenteditable="">Sub task</p><button onclick="removeelem(this)" class="subtaskremovebtn">X</button></li>
+                            <li><p contenteditable="">Sub task</p><button onclick="removeelem(this)" class="subtaskremovebtn">X</button></li>
+                        </ul>
+                        <button onclick="faddsubtask(this)"  class="btn-17 addsubtask">
+                            <span class="text-container">
+                              <span class="text">Add Sub Task</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>   
+                <button class="removemaintask" onclick='removeelem(this)'>X</button>
+            </div>
+            
+            <button onclick="faddmaintask(this)"  class="btn-17 addmaintask">
+                <span class="text-container">
+                  <span class="text">Add Task</span>
+                </span>
+            </button>
+                           
+            <button class="removetasktype" onclick='removeelem(this)'>X</button>
+        </div>    
+
+            
+           
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
